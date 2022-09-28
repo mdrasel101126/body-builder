@@ -1,8 +1,8 @@
 import React from "react";
 import "./Exercise.css";
 
-const Exercise = ({ exercise }) => {
-  //console.log(exercise);
+const Exercise = (props) => {
+  const { handleAddToList, exercise } = props;
   const { name, age, time, picture, about } = exercise;
   return (
     <div className="exercise">
@@ -13,7 +13,7 @@ const Exercise = ({ exercise }) => {
         <p>For Age:{age}</p>
         <p>Time Required: {time}s</p>
       </div>
-      <button>Add To List</button>
+      <button onClick={() => handleAddToList(exercise)}>Add To List</button>
     </div>
   );
 };

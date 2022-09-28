@@ -1,10 +1,11 @@
 .main-container{
-    margin-left: 5%;
     display: grid;
     grid-template-columns: 3fr 1fr;
     column-gap: 30px;
 }
 .exercise-container{
+    margin-left: 5%;
+    margin-right: 5%;
     margin-top: 70px;
 }
 
@@ -12,6 +13,15 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+}
+@media only screen and (max-width:768px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .exercise-grid{
+        display: block;
+    }
 }
 
 @media only screen and (max-width:992px) {
