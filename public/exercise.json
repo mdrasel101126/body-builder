@@ -1,0 +1,51 @@
+[
+    {
+      "_id": "63345a871254c20e720171b1",
+      "picture": "https://i.ibb.co/5GTtyfQ/dumble.webp",
+      "age": "20-25",
+      "name": "Dumbbell",
+      "about": "The dumbbell, a type of free weight, is a piece of equipment used in weight training. It can be used individually or in pairs, with one in each hand.",
+      "time":20
+    },
+    {
+      "_id": "63345a872c717b9c86718d2c",
+      "picture": "https://i.ibb.co/yF6gpT8/stretching.webp",
+      "age": "20-25",
+      "name": "Stretching",
+      "about": "Every stretch can be either static or dynamic and passive or active. Dynamic and active stretches are more helpful for improving functional movements used in everyday life and sports.",
+      "time":20
+    },
+    {
+      "_id": "63345a873ef7a3901eacc93f",
+      "picture": "https://i.ibb.co/Gdh0bKP/pushups.jpg",
+      "age": "20-25",
+      "name": "Pushups",
+      "about": "Doing daily pushups can help build muscle tone and strength in the upper body. Other potential benefits include improved cardiovascular health and better support around the shoulder joints.",
+      "time":30
+    },
+    {
+      "_id": "63345a878d9c789fb2a229b6",
+      "picture": "https://i.ibb.co/YPCbQ84/boxjump.webp",
+      "age": "20-25",
+      "name": "Box Jump",
+      "about": "Box jumps are as straightforward as they sound. Your workout includes jumping onto a box. But proper form is essential for maximizing benefit and minimizing risk.",
+      "time":15
+    },
+    {
+      "_id": "63345a8722cc35900e81ceff",
+      "picture": "https://i.ibb.co/3mjYP4N/ropejump.jpg",
+      "age": "20-25",
+      "name": "Rope Jupm",
+      "about": "jumping rope burns lots of calories, strengthens coordination and bone density, and can reduce your risk of injuries and heart disease.",
+      "time":20
+    },
+    {
+      "_id": "63345a87e6dffa5fd534afbc",
+      "picture": "https://i.ibb.co/bvWg7tw/situps.jpg",
+      "age": "20-25",
+      "name": "Situps",
+      "about": "Situps are classic abdominal exercises done by lying on your back and lifting your torso. They use your body weight to strengthen and tone the core-stabilizing abdominal muscles.",
+      "time":30
+    }
+    
+  ]
