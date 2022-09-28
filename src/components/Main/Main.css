@@ -1,0 +1,25 @@
+.main-container{
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 30px;
+}
+.exercise-container{
+    margin-top: 70px;
+}
+
+.exercise-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+@media only screen and (max-width:992px) {
+    .main-container{
+        grid-template-columns: 2fr 1fr;
+    }
+    .exercise-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+}
