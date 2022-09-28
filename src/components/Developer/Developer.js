@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Developer.css";
 import devImage from "../../images/developer.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+import { AddToLS, GetBreakTimeFromLS } from "../../Localstorage/AddToLS";
 
 const Developer = (props) => {
   const [breakTime, setBreakTime] = useState(0);
   const exerciseTime = props.exerciseTime;
-  const handleBreakTime = () => {};
+  useEffect(() => {
+    let saveBreakTime = GetBreakTimeFromLS();
+    setBreakTime(saveBreakTime);
+  }, []);
+  const handleBreakTime = (breakTime) => {
+    setBreakTime(breakTime);
+    AddToLS(breakTime);
+  };
   return (
     <div className="developer-container">
       <div className="developer-info">
@@ -52,25 +60,20 @@ const Developer = (props) => {
       </div>
       <h3>Add A Break</h3>
       <div className="add-break">
-        <p>
-          <span>10</span>
-          <span>s</span>
+        <p onClick={() => handleBreakTime(10)}>
+          10<span>s</span>
         </p>
-        <p>
-          <span>20</span>
-          <span>s</span>
+        <p onClick={() => handleBreakTime(20)}>
+          20<span>s</span>
         </p>
-        <p>
-          <span>30</span>
-          <span>s</span>
+        <p onClick={() => handleBreakTime(30)}>
+          30<span>s</span>
         </p>
-        <p>
-          <span>40</span>
-          <span>s</span>
+        <p onClick={() => handleBreakTime(40)}>
+          40<span>s</span>
         </p>
-        <p>
-          <span>50</span>
-          <span>s</span>
+        <p onClick={() => handleBreakTime(50)}>
+          50<span>s</span>
         </p>
       </div>
       <h3>Exercise Details</h3>
