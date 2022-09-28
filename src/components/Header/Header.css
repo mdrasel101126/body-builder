@@ -1,0 +1,13 @@
+.nav-bar{
+    background-color:coral;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav-icon{
+    margin-left: 10%;
+    font-size: 40px;
+}
+.nav-bar h2{
+    margin-left: 10px;
+}
