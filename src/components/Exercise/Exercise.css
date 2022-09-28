@@ -34,7 +34,10 @@
     background-color: chocolate;
 }
 @media only screen and (max-width:768px) {
+    .exercise{
+        margin-bottom: 30px;
+    }
     .exercise img{
-        height: 200px;
+        height: 250px;
     }
 }
