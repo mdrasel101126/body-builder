@@ -4,6 +4,8 @@ import devImage from "../../images/developer.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { AddToLS, GetBreakTimeFromLS } from "../../Localstorage/AddToLS";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Developer = (props) => {
   const [breakTime, setBreakTime] = useState(0);
@@ -16,6 +18,8 @@ const Developer = (props) => {
     setBreakTime(breakTime);
     AddToLS(breakTime);
   };
+  const notify = () =>
+    toast("Congratulations! You did the exercise.Keep it up!");
   return (
     <div className="developer-container">
       <div className="developer-info">
@@ -85,7 +89,10 @@ const Developer = (props) => {
         <p>Break Time</p>
         <p>{breakTime}sec</p>
       </div>
-      <button>Activity Completed</button>
+      <button className="activity-btn" onClick={notify}>
+        Activity Completed
+      </button>
+      <ToastContainer />
     </div>
   );
 };
