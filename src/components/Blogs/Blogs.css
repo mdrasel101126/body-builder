@@ -1,0 +1,14 @@
+.blogs-container{
+    margin: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: aliceblue;
+}
+.blogs{
+    background-color: whitesmoke;
+    text-align: justify;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding:2%;
+}
